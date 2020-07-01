@@ -8,17 +8,17 @@ namespace GestaoProfessor
 {
     class ObjectosFuncionarios
     {
-        private long codigo;
+        private int codigo;
         private string nome;
         private int diasTraba;
         private double salarioDia;
 
-        public long GetCodigo()
+        public int GetCodigo()
         {
             return codigo;
         }
 
-        public void SetCodigo(long codigo)
+        public void SetCodigo(int codigo)
         {
             this.codigo = codigo;
         }
@@ -48,12 +48,8 @@ namespace GestaoProfessor
             return salarioDia;
         }
 
-        public void SetSalarioDia(double salarioDia)
-        {
-            this.salarioDia = salarioDia;
-        }
 
-        public ObjectosFuncionarios(long codigo, string nome, int diasTraba, double salarioDia)
+        public ObjectosFuncionarios(int codigo, string nome, int diasTraba, double salarioDia)
         {
             this.codigo = codigo;
             this.nome = nome;

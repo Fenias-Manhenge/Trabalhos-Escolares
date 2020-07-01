@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,12 +39,13 @@
             this.txtSalDia = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnList = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.lstVCodigo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lstVTabela = new System.Windows.Forms.ListView();
+            this.lstVItem = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lstVNome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lstVDTrabalh = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lstVSalDia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lstVSalMens = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -94,6 +96,7 @@
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(151, 20);
             this.txtCode.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.txtCode, "Digite o codigo aqui");
             // 
             // txtName
             // 
@@ -134,28 +137,29 @@
             this.btnList.TabIndex = 9;
             this.btnList.Text = "LIST";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
-            // listView1
+            // lstVTabela
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.lstVCodigo,
+            this.lstVTabela.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lstVItem,
             this.lstVNome,
             this.lstVDTrabalh,
             this.lstVSalDia,
             this.lstVSalMens});
-            this.listView1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(48, 198);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(687, 225);
-            this.listView1.TabIndex = 10;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lstVTabela.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstVTabela.HideSelection = false;
+            this.lstVTabela.Location = new System.Drawing.Point(48, 198);
+            this.lstVTabela.Name = "lstVTabela";
+            this.lstVTabela.Size = new System.Drawing.Size(687, 225);
+            this.lstVTabela.TabIndex = 10;
+            this.lstVTabela.UseCompatibleStateImageBehavior = false;
+            this.lstVTabela.View = System.Windows.Forms.View.Details;
             // 
-            // lstVCodigo
+            // lstVItem
             // 
-            this.lstVCodigo.Text = "CODIGO";
-            this.lstVCodigo.Width = 117;
+            this.lstVItem.Text = "CODIGO";
+            this.lstVItem.Width = 117;
             // 
             // lstVNome
             // 
@@ -182,7 +186,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lstVTabela);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtSalDia);
@@ -195,6 +199,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,12 +217,13 @@
         private System.Windows.Forms.TextBox txtSalDia;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnList;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader lstVCodigo;
+        private System.Windows.Forms.ListView lstVTabela;
+        private System.Windows.Forms.ColumnHeader lstVItem;
         private System.Windows.Forms.ColumnHeader lstVNome;
         private System.Windows.Forms.ColumnHeader lstVDTrabalh;
         private System.Windows.Forms.ColumnHeader lstVSalDia;
         private System.Windows.Forms.ColumnHeader lstVSalMens;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

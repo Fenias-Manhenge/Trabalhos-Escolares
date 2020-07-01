@@ -1,0 +1,11 @@
+C:\Users\Fenias\source\repos\GestaoProfessor\obj\Debug\GestaoProfessor.csprojAssemblyReference.cache
+C:\Users\Fenias\source\repos\GestaoProfessor\obj\Debug\GestaoProfessor.Form1.resources
+C:\Users\Fenias\source\repos\GestaoProfessor\obj\Debug\GestaoProfessor.Properties.Resources.resources
+C:\Users\Fenias\source\repos\GestaoProfessor\obj\Debug\GestaoProfessor.csproj.GenerateResource.cache
+C:\Users\Fenias\source\repos\GestaoProfessor\obj\Debug\GestaoProfessor.csproj.CoreCompileInputs.cache
+C:\Users\Fenias\source\repos\GestaoProfessor\bin\Debug\GestaoProfessor.exe.config
+C:\Users\Fenias\source\repos\GestaoProfessor\bin\Debug\GestaoProfessor.exe
+C:\Users\Fenias\source\repos\GestaoProfessor\bin\Debug\GestaoProfessor.pdb
+C:\Users\Fenias\source\repos\GestaoProfessor\obj\Debug\GestaoProfessor.exe
+C:\Users\Fenias\source\repos\GestaoProfessor\obj\Debug\GestaoProfessor.pdb
+C:\Users\Fenias\source\repos\GestaoProfessor\bin\Debug\Funcionario.accdb
